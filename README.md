@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @moha528
-- 👀 I’m interested in ecomputer science and mainly in programming.
+- 👀 I’m interested in computer science and mainly in programming.
 - 🌱 I’m currently learning ethical hacking in linux, more precisely wireless network pentesting.
 - 💞️ I’m looking to collaborate on any king of project related to unity/c#,webapp or c program.
 - 📫 reach me by sending a simple mail to : mtseckdev@gmail.com
