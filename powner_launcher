@@ -1,0 +1,28 @@
+#!/bin/bash
+
+echo "Selectionnez votre interface réseau :"
+sleep 1
+iwconfig
+echo "Quelle interface ?"
+read interface
+echo $interface > interface.txt
+wpa_cli interface_list > current_interface.txt
+current_interface=$(cat current_interface.txt)
+if [ ! $currrent_interface = "Selected interface '$interface'" ]; then
+	echo ""
+	echo "Quel soit être le délai de ré-assossiation (en secondes) ?"
+	read delai
+	echo $delai > delai.txt
+	gnome-terminal -e "./pbc_wps_powner"
+	gnome-terminal -e "./config_network"
+	wpa_cli interface $interface
+else
+	echo "identique" > resultat.txt
+	echo ""
+	echo "Quel soit être le délai de ré-assossiation (en secondes) ?"
+	read delai
+	echo $delai > delai.txt
+	gnome-terminal -e "./pbc_wps_powner"
+	gnome-terminal -e "./config_network"
+	wpa_cli
+fi	

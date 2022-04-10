@@ -1,0 +1,23 @@
+#!/bin/bash
+
+delai=$(cat delai.txt)
+identique=$(cat resultat.txt)
+interface=$(cat interface.txt)
+if [ $identique = "identique" ]; then
+	echo "CTRL + C pour quitter !"
+	sleep 2
+	while true; do
+	wpa_cli wps_pbc any
+	sleep $delai
+	done
+else
+	echo "CTRL + C pour quitter !"
+	sleep 2
+	while true; do
+	wpa_cli wps_pbc any interface $interface
+	sleep $delai
+	done	
+fi
+
+
+

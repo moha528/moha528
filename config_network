@@ -1,0 +1,18 @@
+#!/bin/bash
+
+interface=$(cat interface.txt)
+echo "Une fois l'association effectuer appuyer sur entrer pour configurer le réseau ..."
+read user
+echo "Configuration du réseau ..."
+sleep 2
+dhclient $interface
+clear
+echo "Configuration terminé !"
+sleep 1
+echo ""
+ifconfig $interface
+echo ""
+echo "Vous êtes désormais connécté au réseau !"
+sleep 1
+echo "Bye !"
+sleep 5
