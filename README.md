@@ -12,6 +12,7 @@ I hold a Diplôme d'Ingénieur de Conception (DIC) in computer engineering from 
 
 ## Selected projects
 
+- [recourse-clearing-house-case-study](https://github.com/moha528/recourse-clearing-house-case-study): design of my thesis platform, covering the claim lifecycle, three-tier architecture, data partitioning between competing companies, access control and audit trail.
 - [stock-api-lang-bench](https://github.com/moha528/stock-api-lang-bench): the same inventory API in Node.js, Rust, Go and Java, with identical SQL, a shared contract test and k6 load tests under CPU and memory limits.
 - [lynk](https://github.com/moha528/lynk): desktop SSH/SFTP client in Rust and TypeScript (Tauri 2), with an Argon2id and AES-GCM encrypted vault synchronised through a Git repository chosen by the user.
 - [winsar](https://github.com/moha528/winsar): archive manager for Windows 11 written in Rust (ZIP, 7z, RAR, TAR), integrated into File Explorer through a context menu and a preview handler.
